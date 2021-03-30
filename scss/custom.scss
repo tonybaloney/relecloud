@@ -46,12 +46,12 @@ $enable-print-styles: true;
 
 // Body
 $body-bg: $white;
-$body-color: $gray-900;
+$body-color: $indigo;
 
 
 // Links
-$link-color: theme-color('primary');
-$link-decoration: none;
+$link-color: $purple;
+$link-decoration: underline;
 $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: underline;
 
@@ -79,7 +79,7 @@ $transition-collapse: height 0.35s ease;
 
 
 // Fonts
-$font-family-sans-serif: Raleway, Arial, sans-serif;
+$font-family-sans-serif: "Raleway", Arial, sans-serif;
 $font-family-monospace: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 $font-family-base: $font-family-sans-serif;
 $font-size-base: 1rem;
@@ -96,10 +96,10 @@ $h4-font-size: 1.5rem;
 $h5-font-size: 1.25rem;
 $h6-font-size: 1rem;
 $headings-margin-bottom: ($spacer / 2);
-$headings-font-family: inherit;
-$headings-font-weight: 500;
+$headings-font-family: "Elevon", Arial;
+$headings-font-weight: bold;
 $headings-line-height: 1.1;
-$headings-color: inherit;
+$headings-color: $indigo;
 $display1-size: 6rem;
 $display2-size: 5.5rem;
 $display3-size: 4.5rem;
@@ -542,6 +542,14 @@ $enable-hover-media-query: false;
 $enable-grid-classes: true;
 $enable-print-styles: true;
 
+body {
+    font-family: $font-family-sans-serif;
+    color: $indigo;
+}
+
+.display-1, .display-2, .display-3 {
+    font-family: $headings-font-family;
+}
 
 .nav-link {
     font-family: "Elevon", Arial
@@ -553,7 +561,7 @@ $enable-print-styles: true;
 }
 
 .main-header {
-    background-image: url('res/img/cosmos-db.jpeg');
+    background-image: url('/res/img/cosmos-db.jpeg');
     background-size: cover;
     min-height: 600px;
     border-radius: 0;
@@ -562,8 +570,6 @@ $enable-print-styles: true;
 
 .main-header * {
     color: white;
-    font-weight: bold;
-    font-family: "Elevon", Arial;
 }
 
 .bg-translucent-secondary {
